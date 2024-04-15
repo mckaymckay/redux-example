@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Form, Input, Button } from 'antd'
 import {useHistory} from 'react-router-dom'
 
-import { postUpdated,selectPostById } from '../../../../store/slice/postSlice'
+import { postUpdated,selectPostById } from '@/store/slice/postSlice'
 const {TextArea}=Input
 
 export default function index ({ match: { params } }) {

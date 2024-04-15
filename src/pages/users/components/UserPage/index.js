@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import {selectUserById, selectAllUsers} from '../../../../store/slice/usersSlice'
+import {selectUserById, selectAllUsers} from '@/store/slice/usersSlice'
 
 export default function UserPage ({ match }) {
   const user = useSelector(state => selectUserById(state, match?.params?.userId))

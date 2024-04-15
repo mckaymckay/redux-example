@@ -3,7 +3,8 @@ import { Form, Input, Button, Select} from 'antd'
 
 import './index.css'
 import { useDispatch,useSelector } from 'react-redux'
-import { postAdded, addNewPost } from '../../../../store/slice/postSlice'
+import { postAdded, addNewPost } from '@/store/slice/postSlice'
+
 // import { postAdded } from '@/store/slice/postSlice'
 import { nanoid } from '@reduxjs/toolkit'
 

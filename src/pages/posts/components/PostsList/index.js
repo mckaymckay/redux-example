@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import './index.css'
 import PostAuthor from '../PostAuthor'
 import PostDate from '../PostDate'
-import { selectAllPosts, fetchPosts } from '../../../../store/slice/postSlice'
-import {FETCH_STASUS_PEDDING} from '../../../../constant/index'
+import { selectAllPosts, fetchPosts } from '@/store/slice/postSlice'
+import {FETCH_STASUS_PEDDING} from '@/constant'
 import { Spin } from 'antd'
 
 

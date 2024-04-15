@@ -4,8 +4,8 @@
 
 import { createSlice, nanoid, createAsyncThunk} from "@reduxjs/toolkit";
 import dayjs from 'dayjs'
-import { client } from '../../api/client'
-import {FETCH_STASUS_PEDDING, FETCH_STASUS_FULFILLED, FETCH_STASUS_ERROR} from '../../constant/index'
+import { client } from '@/api/client'
+import {FETCH_STASUS_PEDDING, FETCH_STASUS_FULFILLED, FETCH_STASUS_ERROR} from '@/constant'
 
 // 初始数据，程序启动时redux store会加载这些值
 const initialState = {

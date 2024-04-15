@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import PostAuthor from '../PostAuthor'
 import PostDate from '../PostDate'
-import {selectPostById} from '../../../../store/slice/postSlice'
+import {selectPostById} from '@/store/slice/postSlice'
 
 
 export default function details ({ match }) {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import {selectPostById} from '../../../../store/slice/postSlice'
+import {selectPostById} from '@/store/slice/postSlice'
 
 export default function index ({ id }) {
   // const post = useSelector(state => state.posts?.find(post => post.id === id))

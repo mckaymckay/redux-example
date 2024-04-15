@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import * as esbuild from 'esbuild'
+import path from 'path'
 
 // This plugin allows us to use JSX in .js files
 const rollupPlugin = (matchers) => ({
@@ -19,6 +20,11 @@ const rollupPlugin = (matchers) => ({
 // Now that the template uses Vite, we mimic that behavior.
 export default defineConfig({
   plugins: [react()],
+  resolve:{
+    alias:{
+      "@":path.resolve(__dirname,"./src")
+    }
+  },
   build: {
     rollupOptions: {
       plugins: [rollupPlugin([/\/src\/.*\.js$/])],
