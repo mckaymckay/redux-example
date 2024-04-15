@@ -3,11 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 
 import App from './App'
-import { store } from './app/store'
-
+import { store } from './store/store'
 import './index.css'
-
 import { worker } from './api/server'
+import {fetchUsers} from './store/slice/usersSlice'
 
 // Wrap app rendering so we can wait for the mock API to initialize
 async function start() {
@@ -15,6 +14,7 @@ async function start() {
   await worker.start({ onUnhandledRequest: 'bypass' })
 
   const root = createRoot(document.getElementById('root'))
+  store.dispatch(fetchUsers())
 
   root.render(
     <React.StrictMode>

@@ -754,16 +754,16 @@ button,
 [type='button'] {
   -webkit-appearance: none;
   display: inline-block;
-  border: 1px solid #0366ee;
+  /* border: 1px solid #0366ee; */
   border-radius: 4px;
-  background: #0366ee;
+  /* background: #0366ee; */
   color: #ffffff;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     Arial, sans-serif;
   font-size: 1rem;
   text-transform: none;
-  padding: 0.75rem 1.25rem;
+  /* padding: 0.75rem 1.25rem; */
   margin: 0 0 0.5rem 0;
   vertical-align: middle;
   text-align: center;
