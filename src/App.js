@@ -16,15 +16,15 @@ import UserList from './pages/users/components/UserList'
 
 function App() {
   return (
-    <Router basename="/src">
+    <Router>
       <Navbar />
       <div className="App">
         <Switch>
           <Route exact path="/" component={Posts}/>
           <Route exact path="/posts/:postId" component={SinglePostPage} />
+          <Route exact path="/editPosts/:postId" component={EditPostPage} />
           <Route exact path="/users" component={UserList} />
           <Route exact path="/users/:userId" component={UserPage} />
-          <Route exact path="/editPosts/:postId" component={EditPostPage} />
           <Redirect to="/" />
         </Switch>
       </div>

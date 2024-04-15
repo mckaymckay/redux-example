@@ -1,13 +1,13 @@
 module.exports = {
-    "env": {
+    env: {
         "browser": true,
-        "es2021": true
+        "node": true
     },
-    "extends": [
+    extends: [
         "eslint:recommended",
         "plugin:react/recommended"
     ],
-    "overrides": [
+    overrides: [
         {
             "env": {
                 "node": true
@@ -20,13 +20,17 @@ module.exports = {
             }
         }
     ],
-    "parserOptions": {
+    parserOptions: {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
+    plugins: [
         "react"
     ],
-    "rules": {
-    }
+    rules: {
+        // 例如，对于未引入的文件，你可以启用 'import/no-unresolved' 规则
+      "no-unused-vars": 1, //不能有声明后未被使用的变量或参数
+      "no-use-before-define": 2, //未定义前不能使用
+  },
+  ignorePatterns: ['node_modules/', 'dist/']
 }
