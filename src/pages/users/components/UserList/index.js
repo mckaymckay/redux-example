@@ -7,7 +7,7 @@ import UserPage from '../UserPage'
 
 export default function UserList () {
   const users = useSelector(selectAllUsers)
-
+console.log(10)
   return (
     <div>
       UserList
