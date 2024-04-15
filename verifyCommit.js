@@ -4,7 +4,7 @@ import fs from 'fs';
 const msgPath = process.argv[2];
 if (!msgPath) process.exit();
 
-function removeComment(msg: string) {
+function removeComment(msg) {
   return msg.replace(/^#.*[\n\r]*/gm, '');
 }
 
